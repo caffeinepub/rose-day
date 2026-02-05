@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Create a single-page \"Rose Day\" website based on the provided HTML/CSS/JS (emoji rain + burst on click), with the same layout and styling.",
+  "architectural_notes": [
+    "Static single-page site implemented with HTML/CSS/vanilla JS; includes animated emoji rain via DOM elements + CSS keyframes and click-triggered burst."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-recreate-the-provided-rose-day-page-as-the-app-s-main-single-page-in-the-react-typescript-frontend-matching-the-layout-and-content-from-the-supplied-html-hero-rose-emoji-card-container-heading-text-message-paragraph-with-line-breaks-and-signature",
+      "title": "Recreate the provided Rose Day page as the app’s main (single) page in the React + TypeScript frontend, matching the layout and content from the supplied HTML (hero rose emoji, card container, heading text, message paragraph with line breaks, and signature).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-match-the-provided-styling-in-the-react-app-pink-to-white-diagonal-gradient-background-poppins-like-sans-serif-typography-centered-layout-card-sizing-padding-radius-shadow-and-text-styling-implement-the-equivalent-styles-using-tailwind-css-and-or-a-dedicated-stylesheet-as-appropriate",
+      "title": "Match the provided styling in the React app (pink-to-white diagonal gradient background, Poppins-like sans-serif typography, centered layout, card sizing/padding/radius/shadow, and text styling). Implement the equivalent styles using Tailwind CSS and/or a dedicated stylesheet as appropriate.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-emoji-rain-animation-behavior-from-the-provided-javascript-in-react-continuously-spawn-falling-emojis-at-a-fixed-interval-remove-them-after-animation-ends-and-support-a-click-tap-burst-that-spawns-multiple-emojis-quickly-use-the-same-emoji-set-and-similar-timing-and-motion-to-the-provided-implementation",
+      "title": "Implement the emoji “rain” animation behavior from the provided JavaScript in React: continuously spawn falling emojis at a fixed interval, remove them after animation ends, and support a click/tap “burst” that spawns multiple emojis quickly. Use the same emoji set and similar timing and motion to the provided implementation.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-set-the-document-page-title-to-rose-day-to-match-the-provided-html",
+      "title": "Set the document/page title to “Rose Day” to match the provided HTML.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-clearly-visible-button-on-the-rose-day-card-that-reveals-and-can-hide-again-a-special-message-when-clicked-tapped",
+      "title": "Add a clearly visible button on the Rose Day card that reveals (and can hide again) a special message when clicked/tapped.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Build/deploy the Rose Day single-page website using the provided HTML/CSS/JS code (hero rose emoji, message card, emoji rain animation, click burst).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add a button to the Rose Day page that reveals/displays a special message when clicked/tapped.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Deploy the updated Rose Day site so it is accessible via a shareable public URL.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Rose Day",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

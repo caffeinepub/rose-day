@@ -1,0 +1,15 @@
+{
+  "backend/main.mo": "Defines an empty Motoko actor canister.",
+  "feature_evidence.json": "Declares feature evidence linking the Rose Day special-message button to affected frontend files and components.",
+  "frontend-file-summaries.txt": "Contains prewritten summaries of key frontend files including App.tsx, emoji hook, global styles, and Tailwind config.",
+  "frontend/index.css": "Tailwind base style sheet defining OKLCH CSS variables, dark mode variants, and global background/foreground styles.",
+  "frontend/index.html": "Basic HTML entry point mounting the React app and loading main.tsx.",
+  "frontend/src/App.tsx": "Main UI with emoji rain, Rose Day message card, and a toggleable special message button using stopPropagation.",
+  "frontend/src/hooks/useActor.ts": "Creates and manages a backend actor instance tied to Internet Identity via React Query with automatic invalidation.",
+  "frontend/src/hooks/useEmojiRain.ts": "Hook that spawns falling emojis continuously and on bursts, removing them after animation ends.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Implements Internet Identity context/provider, handling identity loading, login, logout, and status tracking.",
+  "frontend/src/index.css": "Global styles including Poppins font, gradient background, card and special-message styling, and emoji fall animations.",
+  "frontend/src/main.tsx": "Bootstraps the React app with QueryClientProvider and InternetIdentityProvider, then renders App.",
+  "frontend/tailwind.config.js": "Tailwind configuration with custom fonts, OKLCH color variables, container settings, and animation/typography plugins.",
+  "project_state.json": "Holds project metadata for a Rose Day single‑page website, including features, new requests, and build/deployment requirements."
+}

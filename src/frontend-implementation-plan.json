@@ -1,0 +1,50 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Rose Day: Toggleable special message button",
+  "requirements": [
+    {
+      "id": "REQ-5",
+      "summary": "Add a toggle button inside the Rose Day card to show/hide a special message without triggering the emoji burst click handler.",
+      "acceptanceCriteria": [
+        "A button is visible within the main card content (near the message/signature) with user-facing text in English (e.g., \"Show a special message\").",
+        "Clicking/tapping the button reveals an additional block of text (the special message) within the card.",
+        "Clicking/tapping the button again hides the special message (toggle behavior).",
+        "Interacting with the button does not unintentionally trigger the page-level click behavior for the emoji burst (i.e., button click does not bubble to the root click handler).",
+        "The button and revealed message match the existing page styling (typography/colors/spacing) and remain readable on mobile and desktop."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add local toggle state for a \"special message\" section; render a clearly visible button within the card near the signature that toggles the message; ensure the button onClick uses event.stopPropagation() so it does not trigger the root onClick emoji burst; keep styling consistent with the existing card typography/colors/spacing and responsive readability."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "If needed for consistency, add/adjust minimal styles (e.g., for a card-internal button/message block) that align with existing card/typography colors and spacing, without changing any files under frontend/src/components/ui."
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Prepare the frontend for production deployment and document how to obtain a shareable public URL.",
+      "acceptanceCriteria": [
+        "A production build completes successfully.",
+        "A public URL is available for the deployed site and loads the updated page with the new special-message button."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/DEPLOYMENT.md",
+          "operation": "create",
+          "description": "Add deployment notes for producing a production build and publishing the site to a shareable public URL using the existing project deployment tooling/workflow (documentation only, no backend changes)."
+        },
+        {
+          "path": "frontend/package.json",
+          "operation": "modify",
+          "description": "Verify/adjust frontend build scripts if necessary so a production build can be run successfully in CI/deployment environments (no functional app behavior changes)."
+        }
+      ]
+    }
+  ]
+}

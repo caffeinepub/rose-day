@@ -1,0 +1,58 @@
+{
+  "kind": "build_request",
+  "title": "Add a “special message” button to the Rose Day page",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-5",
+      "text": "Add a clearly visible button on the Rose Day card that reveals (and can hide again) a special message when clicked/tapped.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "Add the button that you asked me to show a special message."
+        ]
+      },
+      "acceptanceCriteria": [
+        "A button is visible within the main card content (near the message/signature) with user-facing text in English (e.g., \"Show a special message\").",
+        "Clicking/tapping the button reveals an additional block of text (the special message) within the card.",
+        "Clicking/tapping the button again hides the special message (toggle behavior).",
+        "Interacting with the button does not unintentionally trigger the page-level click behavior for the emoji burst (i.e., button click does not bubble to the root click handler).",
+        "The button and revealed message match the existing page styling (typography/colors/spacing) and remain readable on mobile and desktop."
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Deploy the updated Rose Day site so it is accessible via a shareable public URL.",
+      "target": "unknown",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "I want you to add button and I want you to make this site live so that I can share the URL with my boyfriend."
+        ]
+      },
+      "acceptanceCriteria": [
+        "A production build completes successfully.",
+        "A public URL is available for the deployed site and loads the updated page with the new special-message button."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under frontend/src/components/ui.",
+    "Do not modify any files listed in frontend.immutablePaths (compose existing hooks/components instead).",
+    "Keep backend as a single Motoko actor; only add backend changes if strictly necessary for the button behavior (not expected)."
+  ],
+  "nonGoals": [
+    "Add a signup/login system for the Rose Day site.",
+    "Implement credit management or any Caffeine account/credits UI inside the app.",
+    "Add backend persistence for the special message state."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

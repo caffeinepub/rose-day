@@ -1,0 +1,6 @@
+{
+  "frontend/src/App.tsx": "Main Rose Day component with emoji rain animations, message card, and a toggleable special message button that uses stopPropagation to prevent triggering the emoji burst.",
+  "frontend/src/hooks/useEmojiRain.ts": "Custom React hook that manages the emoji rain animation state, including continuous spawning (~120ms intervals), initial burst (~120 emojis), click-triggered bursts (~60 emojis with 30ms stagger), and automatic cleanup after animations complete.",
+  "frontend/src/index.css": "Global styles with Poppins font, pink gradient background, card styling, signature styling, falling emoji animations, and special message section with fade-in animation.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with Poppins as the default sans-serif font family to match the original design aesthetic."
+}
